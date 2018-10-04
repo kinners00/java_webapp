@@ -13,4 +13,3 @@ Dependency projects
 -------------------
 [Java Webapp Polyglot](https://github.com/ipcrm/java_webapp_polyglot.git)
 
-
