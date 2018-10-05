@@ -22,8 +22,9 @@ jenkins1/example-jenkins:
 
   Exec:
     - echo "Exec Starting."
-    - publicip=$(curl -s ident.me) || true
-    - 'echo "****************************************************************"'
-    - 'echo     "Java_webapp application will start on: http://$publicip:$PORT"'
-    - 'echo "****************************************************************"'
+    - set -x
+    #- publicip=$(curl -s ident.me) || true
+    #- 'echo "****************************************************************"'
+    #- 'echo     "Java_webapp application will start on: http://$publicip:$PORT"'
+    #- 'echo "****************************************************************"'
     - java -DappPort=$PORT -jar target/java-webapp-*.jar
