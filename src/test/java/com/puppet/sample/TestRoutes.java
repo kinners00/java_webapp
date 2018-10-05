@@ -40,9 +40,9 @@ public class TestRoutes
         assertTrue(res.body.contains("Hello World!"));
 	}
 
-    private TestResponse request(String method, String path) throws java.io.IOException {
+    private TestResponse request(String method, String path, String ip = "10.90.30.185:10000") throws java.io.IOException {
 		try {
-			URL url = new URL("http://localhost:9999" + path);
+			URL url = new URL("http" + ip + path);
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod(method);
 			connection.setDoOutput(true);
