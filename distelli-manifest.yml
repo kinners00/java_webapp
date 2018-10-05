@@ -23,7 +23,6 @@ jenkins1/example-jenkins:
   Exec:
     - echo "Exec Starting."
     - set -x
-    - ifconfig
     #- publicip=$(curl -s ident.me) || true
     #- 'echo "****************************************************************"'
     #- 'echo     "Java_webapp application will start on: http://$publicip:$PORT"'
