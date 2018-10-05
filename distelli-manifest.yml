@@ -6,7 +6,7 @@ jenkins1/example-jenkins:
        
   PkgInclude:
     # Include ALL files in the release package
-    - '*'
+    - target/java-webapp-*.jar
 
   ###Below is deployment phases
   
