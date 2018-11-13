@@ -17,7 +17,7 @@ public class App
 
   public String enMsg()
   {
-    return "Hello World - This test worked";
+    return "Hello World";
   }
 
   private static String requestInfoToString(Request request) {
