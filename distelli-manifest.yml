@@ -28,4 +28,3 @@ jenkins1/example-jenkins:
     #- 'echo     "Java_webapp application will start on: http://$publicip:$PORT"'
     #- 'echo "****************************************************************"'
     - java -DappPort=$PORT -jar target/java-webapp-*.jar
-
