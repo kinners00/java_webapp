@@ -22,7 +22,6 @@ jenkins1/example-jenkins:
 
   Exec:
     - echo "Exec Starting."
-    - $PORT=10001
     - set -x
     - publicip=$(curl -s ident.me) || true
     - 'echo "****************************************************************"'
